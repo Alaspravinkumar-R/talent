@@ -28,9 +28,6 @@ const router = express.Router();
 
 // talent api routes
 app.use(routePaths.baseURL, routes);
-router.get("/run", (req, res) => {
-  res.json("Server running...")
-})
 
 // token check
 
