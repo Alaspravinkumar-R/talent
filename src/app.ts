@@ -24,10 +24,11 @@ app.use(express.urlencoded({ extended: true }));
 // enable cors
 app.use(cors());
 app.options("*", cors());
+const router = express.Router();
 
 // talent api routes
 app.use(routePaths.baseURL, routes);
-app.use("/", (req, res) => {
+router.get("/run", (req, res) => {
   res.json("Server running...")
 })
 
