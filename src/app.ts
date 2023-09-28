@@ -4,7 +4,7 @@ import cors from "cors";
 import httpStatus from "http-status";
 import { ErrorHandle } from "./middlewares/error";
 import ApiError from "./utils/ApiError";
-import routes from "./routes/talent/index";
+import routes from "./routes/talent/main";
 import path from "path";
 import dbConfig from "./config/mongo";
 import { routePaths } from "./config/constants";
@@ -24,7 +24,6 @@ app.use(express.urlencoded({ extended: true }));
 // enable cors
 app.use(cors());
 app.options("*", cors());
-const router = express.Router();
 
 // talent api routes
 app.use(routePaths.baseURL, routes);
