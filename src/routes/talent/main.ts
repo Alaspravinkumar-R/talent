@@ -5,7 +5,7 @@ import { routePaths } from "../../config/constants";
 
 const router = express.Router();
 
-const defaultRoutes = [
+export const defaultRoutes = [
   {
     path: routePaths.endpoints.auth.auth,
     route: authRoute,
