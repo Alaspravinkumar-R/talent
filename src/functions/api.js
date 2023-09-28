@@ -1,7 +1,7 @@
 import express, { Router } from "express";
 import serverless from "serverless-http";
-import routes from "../src/routes/talent/main";
-import { routePaths } from "../src/config/constants";
+import routes from "../routes/talent/main";
+import { routePaths } from "../config/constants";
 import helmet from "helmet";
 import cors from "cors";
 import path from "path";
